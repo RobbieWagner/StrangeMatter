@@ -16,7 +16,7 @@ public class CameraGoal : MonoBehaviour
     {
         if(other.gameObject.CompareTag("Camera"))
         {
-            telescopeCamera.EnableCamera();
+            telescopeCamera.EnableCamera(this);
         }
     }
 

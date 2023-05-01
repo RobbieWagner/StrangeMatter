@@ -10,18 +10,26 @@ public class TelescopeCamera : MonoBehaviour
 
     [SerializeField] Button cameraButton;
 
+    private CameraGoal foundGoal;
+    [SerializeField] Level level;
+
     // Start is called before the first frame update
     void Start()
     {
         cameraButton.interactable = false;
     }
 
-    public void EnableCamera() 
+    public void EnableCamera(CameraGoal cameraGoal) 
     {
         cameraButton.interactable = true;
         reachedGoalSound.Play();
+        foundGoal = cameraGoal;
     }
-    public void DisableCamera() {cameraButton.interactable = false;}
+    public void DisableCamera() 
+    {
+        cameraButton.interactable = false;
+        foundGoal = null;
+    }
 
     public void TakePicture()
     {
@@ -29,6 +37,11 @@ public class TelescopeCamera : MonoBehaviour
         {
             pictureSound.Play();
             reachedGoalSound.Play();
+
+            if(foundGoal != null)
+            {
+                level.CheckOffGoal(foundGoal);
+            }
         }
     }
 }
