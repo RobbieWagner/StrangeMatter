@@ -21,6 +21,10 @@ public class TelescopeMovement : MonoBehaviour
     [SerializeField] TextMeshProUGUI xCoordinateText;
     [SerializeField] TextMeshProUGUI yCoordinateText;
 
+    [SerializeField] AudioSource buttonClick;
+    [SerializeField] AudioSource cameraMove;
+    [SerializeField] AudioSource buttonUnclick;
+
     [SerializeField] NavArrow[] navArrows;
 
     enum Arrow
@@ -83,6 +87,8 @@ public class TelescopeMovement : MonoBehaviour
             if(arrow != (int) Arrow.stop)
             {
                 moving = true;
+                buttonClick.Play();
+                cameraMove.Play();
                 StartCoroutine(movementCoroutine);
             }
         }
@@ -94,10 +100,18 @@ public class TelescopeMovement : MonoBehaviour
             if(telescopeView.anchoredPosition.y <= -maxY) telescopeView.anchoredPosition = new Vector2(telescopeView.anchoredPosition.x, -maxY + 1);
             
             moving = false;
-            if(movementCoroutine != null) StopCoroutine(movementCoroutine);
+            if(movementCoroutine != null) 
+            {
+                StopCoroutine(movementCoroutine);
+                buttonUnclick.Play();
+            }
 
             if(currentArrow != arrow) OnArrowPress(arrow);
-            else foreach(NavArrow navArrow in navArrows) navArrow.ResetArrow();
+            else {
+                cameraMove.Stop();
+                foreach(NavArrow navArrow in navArrows) navArrow.ResetArrow();
+                currentArrow = 4;
+            }
         }
     }
 
@@ -125,6 +139,8 @@ public class TelescopeMovement : MonoBehaviour
         moving = true;
         OnArrowPress((int) Arrow.stop);
 
+        cameraMove.Stop();
         foreach(NavArrow navArrow in navArrows) navArrow.ResetArrow();
+        currentArrow = 4;
     }
 }
