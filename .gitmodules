@@ -1,0 +1,3 @@
+[submodule "Assets/RestrictedAssets"]
+	path = Assets/RestrictedAssets
+	url = https://github.com/RobbieWagner/StrangeMatterR.git
