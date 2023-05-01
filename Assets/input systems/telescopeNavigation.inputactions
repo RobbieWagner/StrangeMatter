@@ -1,0 +1,54 @@
+{
+    "name": "telescopeNavigation",
+    "maps": [
+        {
+            "name": "releaseButton",
+            "id": "472535fa-f968-430d-9ba2-7b2b5996270a",
+            "actions": [
+                {
+                    "name": "Release",
+                    "type": "Button",
+                    "id": "1771aae1-c287-4307-8bf7-978980864123",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": true
+                },
+                {
+                    "name": "Hold",
+                    "type": "Button",
+                    "id": "aedc2878-c89f-4aeb-8439-54099b2f82be",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                }
+            ],
+            "bindings": [
+                {
+                    "name": "",
+                    "id": "8a3d9d18-148d-47f4-a199-459218c3466a",
+                    "path": "<Mouse>/leftButton",
+                    "interactions": "Press(behavior=1)",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Release",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "5f123dd2-dd46-4441-8b6d-7031712f988d",
+                    "path": "<Mouse>/leftButton",
+                    "interactions": "Hold",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Hold",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                }
+            ]
+        }
+    ],
+    "controlSchemes": []
+}
