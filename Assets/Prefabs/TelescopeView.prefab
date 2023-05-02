@@ -52,7 +52,6 @@ GameObject:
   - component: {fileID: 7261821279678257530}
   - component: {fileID: 7261821279678257531}
   - component: {fileID: 7261821279678257478}
-  - component: {fileID: 7261821279678257532}
   m_Layer: 5
   m_Name: comet
   m_TagString: Untagged
@@ -155,7 +154,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d5a00097aa1c6c54eb95e5d04c3585e6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  goalEffect: {fileID: 7261821279678257532}
+  goalEffect: {fileID: 0}
   goalAchievementText: Comet Documented
 --- !u!50 &7261821279678257531
 Rigidbody2D:
@@ -197,21 +196,6 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
---- !u!114 &7261821279678257532
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7261821279678257534}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5b5b42c78806b2d46a47b3b00d4eafcd, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  toTurnOn: {fileID: 7261821281168270645}
-  warningSign: {fileID: 0}
-  warningSignText: Unkown Object Detected [-315, -1]
 --- !u!1 &7261821279703138872
 GameObject:
   m_ObjectHideFlags: 0
@@ -480,6 +464,8 @@ MonoBehaviour:
   toTurnOn: {fileID: 7261821279678257534}
   warningSign: {fileID: 0}
   warningSignText: Motion Detected [338, 217]
+  waitToActivate: 1
+  timeToWait: 3
 --- !u!1 &7261821281168270645
 GameObject:
   m_ObjectHideFlags: 0

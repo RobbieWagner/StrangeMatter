@@ -7,6 +7,7 @@ using TMPro;
 public class WarningSign : MonoBehaviour
 {
 
+    [SerializeField] AudioSource warningSound;
     [SerializeField] TextMeshProUGUI warningSignText;
 
     // Start is called before the first frame update
@@ -19,5 +20,6 @@ public class WarningSign : MonoBehaviour
     {
         warningSignText.text = text;
         warningSignText.enabled = true;
+        warningSound.Play();
     }
 }

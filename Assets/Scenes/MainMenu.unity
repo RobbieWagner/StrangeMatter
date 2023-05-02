@@ -1744,6 +1744,20 @@ PrefabInstance:
       propertyPath: settings
       value: 
       objectReference: {fileID: 1480664798}
+    - target: {fileID: 8838942159132864958, guid: 7dfb595f80264fb4aa6efdbdc3860a7a, type: 3}
+      propertyPath: m_text
+      value: 'Development - Robbie Wagner
+
+        Silver Font - Poppy Works
+
+        GILSANUB
+        Font - Aseprite
+
+        Original Sound Effects - Soundjay
+
+        Music
+        - Robbie Wagner'
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7dfb595f80264fb4aa6efdbdc3860a7a, type: 3}
 --- !u!223 &4745968063153138935 stripped

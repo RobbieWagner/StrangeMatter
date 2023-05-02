@@ -14,6 +14,8 @@ public class CheckListObject : MonoBehaviour
     int stepsComplete;
     string originalTask;
 
+    [SerializeField] GoalEffect goalEffect;
+
 
     // Start is called before the first frame update
     void Start()
@@ -30,6 +32,7 @@ public class CheckListObject : MonoBehaviour
     public void CheckBox()
     {
         checkBox.enabled = true;
+        if(goalEffect != null) goalEffect.ActivateGoalEffect();
     }
 
     public void IncrementGoal()
