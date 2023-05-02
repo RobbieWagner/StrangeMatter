@@ -6,6 +6,7 @@ public class CameraGoal : MonoBehaviour
 {
 
     TelescopeCamera telescopeCamera;
+    [SerializeField] public GoalEffect goalEffect;
 
     private void Start() 
     {

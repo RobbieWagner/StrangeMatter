@@ -11,17 +11,11 @@ public class CheckListObject : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
+        checkBox.enabled = false;
     }
 
     public void CheckBox()
     {
-        
+        checkBox.enabled = true;
     }
 }

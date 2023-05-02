@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class Level : MonoBehaviour
 {
@@ -8,16 +9,12 @@ public class Level : MonoBehaviour
     [SerializeField] List<CameraGoal> goals;
     [SerializeField] List<CheckListObject> checkListObjects;
 
+    [SerializeField] GameObject completeLevelButton;
+
     // Start is called before the first frame update
     void Start()
     {
-        
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
+        completeLevelButton.SetActive(false);
     }
 
     public void CheckOffGoal(CameraGoal goal)
@@ -26,6 +23,7 @@ public class Level : MonoBehaviour
         {
             if(goal = goals[i])
             {
+                if(goals[i].goalEffect != null) goals[i].goalEffect.ActivateGoalEffect();
                 checkListObjects[i].CheckBox();
                 checkListObjects.RemoveAt(i);
                 goals.RemoveAt(i);
@@ -40,6 +38,6 @@ public class Level : MonoBehaviour
 
     private void CompleteLevel()
     {
-
+        completeLevelButton.SetActive(true);
     }
 }
