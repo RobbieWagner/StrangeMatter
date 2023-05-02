@@ -14,6 +14,9 @@ public class TelescopeMovement : MonoBehaviour
 
     [HideInInspector] public static bool moving;
     int currentArrow;
+
+    [SerializeField] float startX = 0f;
+    [SerializeField] float startY = 0f;
     [SerializeField] float telescopeSpeed = 5f;
     [SerializeField] float maxX = 1000f;
     [SerializeField] float maxY = 1000f;
@@ -41,6 +44,8 @@ public class TelescopeMovement : MonoBehaviour
     {
         moving = false;
         currentArrow = 4;
+
+        telescopeView.anchoredPosition = new Vector2(-startX, -startY);
 
         xCoordinateText.text = ((int) -telescopeView.anchoredPosition.x).ToString();
         yCoordinateText.text = ((int) -telescopeView.anchoredPosition.y).ToString();

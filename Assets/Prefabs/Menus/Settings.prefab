@@ -2674,7 +2674,7 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 50
+  m_fontSize: 36
   m_fontSizeBase: 50
   m_fontWeight: 400
   m_enableAutoSizing: 0
@@ -3182,14 +3182,14 @@ PrefabInstance:
       propertyPath: m_text
       value: Reset
       objectReference: {fileID: 0}
+    - target: {fileID: 5750911955500369872, guid: 4fff346c35cc18648b6dbdae7374e79d, type: 3}
+      propertyPath: m_fontSize
+      value: 36
+      objectReference: {fileID: 0}
     - target: {fileID: 5750911956658393508, guid: 4fff346c35cc18648b6dbdae7374e79d, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 8030667723882144364}
-    - target: {fileID: 5750911956658393508, guid: 4fff346c35cc18648b6dbdae7374e79d, type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Target
-      value: 
-      objectReference: {fileID: 0}
     - target: {fileID: 5750911956658393508, guid: 4fff346c35cc18648b6dbdae7374e79d, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[2].m_Target
       value: 
@@ -3318,6 +3318,10 @@ PrefabInstance:
       propertyPath: m_text
       value: Save
       objectReference: {fileID: 0}
+    - target: {fileID: 5750911955500369872, guid: 4fff346c35cc18648b6dbdae7374e79d, type: 3}
+      propertyPath: m_fontSize
+      value: 36
+      objectReference: {fileID: 0}
     - target: {fileID: 5750911956658393508, guid: 4fff346c35cc18648b6dbdae7374e79d, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
@@ -3325,7 +3329,7 @@ PrefabInstance:
     - target: {fileID: 5750911956658393508, guid: 4fff346c35cc18648b6dbdae7374e79d, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Target
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 4453752713918680996}
     - target: {fileID: 5750911956658393508, guid: 4fff346c35cc18648b6dbdae7374e79d, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
       value: SaveSettings
@@ -3431,3 +3435,14 @@ RectTransform:
   m_CorrespondingSourceObject: {fileID: 5750911956658393509, guid: 4fff346c35cc18648b6dbdae7374e79d, type: 3}
   m_PrefabInstance: {fileID: 7908488411126628841}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &4453752713918680996 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 5768671524604153421, guid: 4fff346c35cc18648b6dbdae7374e79d, type: 3}
+  m_PrefabInstance: {fileID: 7908488411126628841}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c617d7a37ef306b40ae709abe07eff78, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 

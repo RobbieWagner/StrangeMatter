@@ -7,6 +7,7 @@ public class CameraGoal : MonoBehaviour
 
     TelescopeCamera telescopeCamera;
     [SerializeField] public GoalEffect goalEffect;
+    [SerializeField] public string goalAchievementText;
 
     private void Start() 
     {
