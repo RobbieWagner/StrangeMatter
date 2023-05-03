@@ -31,6 +31,7 @@ public class CheckListObject : MonoBehaviour
 
     public void CheckBox()
     {
+        Debug.Log("enabled");
         checkBox.enabled = true;
         if(goalEffect != null) goalEffect.ActivateGoalEffect();
     }
@@ -38,6 +39,8 @@ public class CheckListObject : MonoBehaviour
     public void IncrementGoal()
     {
         stepsComplete++;
+        Debug.Log(steps);
         if(listSteps) taskText.text = originalTask + " (" + stepsComplete + "/" + steps + ")";
+        if(stepsComplete == steps) CheckBox();
     }
 }

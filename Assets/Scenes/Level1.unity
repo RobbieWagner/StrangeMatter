@@ -4699,6 +4699,7 @@ MonoBehaviour:
   - {fileID: 603067736}
   - {fileID: 1623939805}
   - {fileID: 993732246}
+  mGoals: []
   checkListObjects:
   - {fileID: 516711099}
   - {fileID: 266512977}
@@ -4706,6 +4707,7 @@ MonoBehaviour:
   - {fileID: 516748365}
   completeLevelButton: {fileID: 1411151487}
   goalAchievementText: {fileID: 465962954}
+  measureText: {fileID: 0}
   afterChecklistEffects:
   - {fileID: 669429555}
 --- !u!4 &669429554
@@ -12429,7 +12431,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7845f3ffcc4b6584ba2306d03e6b5766, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  gameSceneName: MainMenu
+  gameSceneName: Level2
   canvas: {fileID: 1411151490}
   loadingCanvas: {fileID: 1411151490}
   turnOffObjects: []
