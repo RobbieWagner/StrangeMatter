@@ -2,13 +2,20 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class tapeRecorderMusic : MonoBehaviour
+public class TapeRecorderMusic : MonoBehaviour
 {
 
     [SerializeField] private AudioSource music;
     bool isPaused;
 
-    private void Start() {isPaused = false;}
+    [HideInInspector] public bool recording;
+
+    private void Start() 
+    {
+        isPaused = false;
+        recording = false;
+    }
+
     public void OnButtonPress()
     {
         if(isPaused)
@@ -17,10 +24,23 @@ public class tapeRecorderMusic : MonoBehaviour
             music.UnPause();
         }
         else music.Play();
+        recording = false;
+    }
+
+    public void StopButton()
+    {
+        isPaused = false;
     }
 
     public void PauseButton()
     {
-        isPaused = true;
+        recording = false;
+        if(music.isPlaying)isPaused = true;
+    }
+
+    public void RecordButton()
+    {
+        recording = true;
+        Debug.Log("recording");
     }
 }

@@ -18,6 +18,8 @@ public class Level : MonoBehaviour
 
     [SerializeField] List<GoalEffect> afterChecklistEffects;
 
+    [SerializeField] GoalEffect lastGoalEffect;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -107,6 +109,8 @@ public class Level : MonoBehaviour
     private void CompleteLevel()
     {
         completeLevelButton.SetActive(true);
+
+        if(lastGoalEffect != null) lastGoalEffect.ActivateGoalEffect();
     }
 
     private IEnumerator FlashGoalCompletionText(CameraGoal goal)

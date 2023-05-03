@@ -9,13 +9,13 @@ public class LoadGameMenuItem : MonoBehaviour
 {
     [SerializeField] private string gameSceneName;
     
-    [SerializeField] private Canvas canvas;
-    [SerializeField] private Canvas loadingCanvas;
+    [SerializeField] protected Canvas canvas;
+    [SerializeField] protected Canvas loadingCanvas;
 
     [SerializeField] private GameObject[] turnOffObjects; //game objects that need to be turned off during loading
 
     //Starts the game
-    public void OnSelectMenuItem()
+    public virtual void OnSelectMenuItem()
     {
         canvas.enabled = false;
         loadingCanvas.enabled = true;
