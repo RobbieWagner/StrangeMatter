@@ -93,7 +93,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 8030667723882144364}
         m_TargetAssemblyTypeName: SettingsMenu, Assembly-CSharp
-        m_MethodName: SetPlayerVolume
+        m_MethodName: SetMusicVolume
         m_Mode: 0
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -1817,7 +1817,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 8030667723882144364}
         m_TargetAssemblyTypeName: SettingsMenu, Assembly-CSharp
-        m_MethodName: SetGhostVolume
+        m_MethodName: SetGameVolume
         m_Mode: 0
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -2215,7 +2215,7 @@ Canvas:
   m_SortingBucketNormalizedSize: 0
   m_AdditionalShaderChannelsFlag: 25
   m_SortingLayerID: 0
-  m_SortingOrder: 5
+  m_SortingOrder: 10005
   m_TargetDisplay: 0
 --- !u!114 &7908488411956391761
 MonoBehaviour:
@@ -2275,6 +2275,7 @@ MonoBehaviour:
   musicVolumeSlider: {fileID: 1402770666921371841}
   uiVolumeSlider: {fileID: 2137327457268735144}
   gameVolumeSlider: {fileID: 1886542038550168414}
+  setVolumesOnSave: 0
 --- !u!1 &7908488412392602225
 GameObject:
   m_ObjectHideFlags: 0

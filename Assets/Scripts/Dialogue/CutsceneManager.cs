@@ -14,15 +14,71 @@ public class CutsceneManager : DialogueManager
     [SerializeField] Image blackoutScreen;
     [SerializeField] TextMeshProUGUI endText;
 
+    [SerializeField] TextAsset secondDialogueFile;
+    [SerializeField] Canvas ending3;
+
+    [SerializeField] bool endingCutscene = true;
+
+    [SerializeField] bool playingRecording;
+    bool canPressRecord;
+
+    [SerializeField] TapeRecorderMusic tapeRecorder;
+    [SerializeField] Sprite[] recorderSprites;
+    [SerializeField] Image recorder;
+    [SerializeField] Image textImage;
+
     protected override void Start()
     {
         base.Start();
 
-        StartCoroutine(RunCutscene());
+        if(endingCutscene) StartCoroutine(RunCutscene());
+        else 
+        {
+            playingRecording = false;
+            canPressRecord = true;
+            tapeRecorder.recording = false;
+        }
     }
 
     // Update is called once per frame
     protected override void Update(){  }
+
+    public void PlayTapeRecorder()
+    {
+        if(!playingRecording)StartCoroutine(PlayRecording());
+        tapeRecorder.recording = false;
+    }
+
+    public void RecordButton()
+    {
+        if(!playingRecording && !tapeRecorder.recording)
+        {
+            tapeRecorder.recording = true;
+            recorder.sprite = recorderSprites[1];
+        }
+        else if(tapeRecorder.recording)
+        {
+            tapeRecorder.recording = false;
+            recorder.sprite = recorderSprites[0];
+        }
+        
+    }
+
+    public IEnumerator PlayRecording()
+    {
+        textImage.enabled = true;
+        playingRecording = true;
+        canPressRecord = false;
+        recorder.sprite = recorderSprites[2];
+
+        yield return StartCoroutine(StartDialogue());
+
+        textImage.enabled = false;
+        recorder.sprite = recorderSprites[0];
+        canPressRecord = true;
+        playingRecording = false;
+        StopCoroutine(PlayRecording());
+    }
 
     public IEnumerator RunCutscene()
     {
@@ -35,7 +91,7 @@ public class CutsceneManager : DialogueManager
         while(blackoutScreen.color.a < 1)
         {
             blackoutScreen.color = new Color(0,0,0,blackoutScreen.color.a + .05f);
-            yield return new WaitForSeconds(.25f);
+            yield return new WaitForSeconds(.02f);
         }
 
         if(dialogueFile != null) yield return StartCoroutine(StartDialogue());
@@ -50,6 +106,17 @@ public class CutsceneManager : DialogueManager
             yield return new WaitForSeconds(3f);
             endText.enabled = true;
             yield return new WaitForSeconds(2f);
+            SceneManager.LoadScene("MainMenu");
+        }
+        else if(PlayerPrefs.GetInt("ending") == 3)
+        {
+            yield return new WaitForSeconds(1.5f);
+            dialogueFile = secondDialogueFile;
+            yield return StartCoroutine(StartDialogue());
+            blackoutScreen.enabled = true;
+            yield return new WaitForSeconds(3f);
+            ending3.enabled = true;
+            yield return new WaitForSeconds(4f);
             SceneManager.LoadScene("MainMenu");
         }
     }

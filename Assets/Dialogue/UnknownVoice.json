@@ -1,0 +1,59 @@
+{
+    "sentences": [
+        {
+            "textID": 0,
+            "text": "Hey!",
+            "textColor": "blue"
+        },
+        {
+            "textID": 1,
+            "text": "Stop what you are doing right now and listen.",
+            "textColor": "blue"
+        },
+        {
+            "textID": 2,
+            "text": "I don't have a lot of time to talk.",
+            "textColor": "blue"
+        },
+        {
+            "textID": 3,
+            "text": "My supervisor will be back any minute.",
+            "textColor": "blue"
+        },
+        {
+            "textID": 4,
+            "text": "The government is trying to keep quiet about something." ,
+            "textColor": "blue"
+        },
+        {
+            "textID": 5,
+            "text": "I think it has to do with the strange matter." ,
+            "textColor": "blue"
+        },
+        {
+            "textID": 6,
+            "text": "I overheard two officials talking.",
+            "textColor": "blue" 
+        },
+        {
+            "textID": 7,
+            "text": "It sounds like we might be in for a catastrophe." ,
+            "textColor": "blue"
+        },
+        {
+            "textID": 8,
+            "text": "The people need to know about this. They need warning." ,
+            "textColor": "blue"
+        },
+        {
+            "textID": 9,
+            "text": "If you see anything damning tonight, take the photo data." ,
+            "textColor": "blue"
+        },
+        {
+            "textID": 10,
+            "text": "You'll risk getting caught, but the public deserves the truth." ,
+            "textColor": "blue"
+        }
+    ]
+}

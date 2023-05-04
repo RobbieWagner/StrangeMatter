@@ -4126,7 +4126,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7845f3ffcc4b6584ba2306d03e6b5766, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  gameSceneName: MainMenu
+  gameSceneName: Level3
   canvas: {fileID: 264377061}
   loadingCanvas: {fileID: 264377061}
   turnOffObjects: []

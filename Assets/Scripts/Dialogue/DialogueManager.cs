@@ -66,6 +66,8 @@ public class DialogueManager : MonoBehaviour
     //For cutscene override
     protected int curImage;
 
+    [SerializeField] protected AudioSource talkingSound;
+
     protected virtual void Start()
     {
         currentSentence = -1;
@@ -132,6 +134,8 @@ public class DialogueManager : MonoBehaviour
 
         for(int i = 0; i < textToDisplay.Length; i++)
         {
+            talkingSound.pitch = UnityEngine.Random.Range(.8f,1.2f);
+            talkingSound.Play();
             dialogueText.text += textToDisplay[i];
             yield return new WaitForSeconds(timeBetweenCharacters);
             if(skipSentence) i = textToDisplay.Length;

@@ -833,6 +833,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Settings
       objectReference: {fileID: 0}
+    - target: {fileID: 8030667723882144364, guid: 8ff9cb3f87910394085b5519e275bef9, type: 3}
+      propertyPath: setVolumesOnSave
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 8452044164775557521, guid: 8ff9cb3f87910394085b5519e275bef9, type: 3}
       propertyPath: m_AnchorMax.x
       value: 0

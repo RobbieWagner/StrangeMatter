@@ -6,7 +6,6 @@ using UnityEngine.Audio;
 
 public class SettingsMenu : MonoBehaviour
 {
-
     [SerializeField] private AudioMixer audioMixer;
 
     [SerializeField] private Toggle fullscreenToggle;
@@ -21,6 +20,8 @@ public class SettingsMenu : MonoBehaviour
     float gameVolume;
     int fullscreen;
     Resolution[] resolutions;
+
+    [SerializeField] bool setVolumesOnSave = false;
 
     void Start()
     {
@@ -68,7 +69,6 @@ public class SettingsMenu : MonoBehaviour
     {
         if(volume < -40) volume = -80;
         gameVolume = volume;
-        audioMixer.SetFloat("game", gameVolume);
     } 
 
     public void LoadSettings()
@@ -109,6 +109,14 @@ public class SettingsMenu : MonoBehaviour
 
     public void SaveSettings()
     {
+        if(setVolumesOnSave)
+        {
+            audioMixer.SetFloat("main_volume", mainVolume);
+            audioMixer.SetFloat("music_volume", musicVolume);
+            audioMixer.SetFloat("ui_volume", uiVolume);
+            audioMixer.SetFloat("game_volume", gameVolume);
+        }
+
         PlayerPrefs.SetFloat("main_volume", mainVolume);
         PlayerPrefs.SetFloat("music_volume", musicVolume);
         PlayerPrefs.SetFloat("ui_volume", uiVolume);
@@ -119,6 +127,14 @@ public class SettingsMenu : MonoBehaviour
     
     public void ResetVolumes()
     {
+        if(setVolumesOnSave)
+        {
+            audioMixer.SetFloat("main_volume", mainVolume);
+            audioMixer.SetFloat("music_volume", musicVolume);
+            audioMixer.SetFloat("ui_volume", uiVolume);
+            audioMixer.SetFloat("game_volume", gameVolume);
+        }
+        
         mainVolumeSlider.value = PlayerPrefs.GetFloat("main_volume", 0f);
         musicVolumeSlider.value = PlayerPrefs.GetFloat("music_volume", 0f);
         uiVolumeSlider.value = PlayerPrefs.GetFloat("ui_volume", 0f);

@@ -16,7 +16,6 @@ public class BranchingLoads : LoadGameMenuItem
         loadingCanvas.enabled = true;
 
         int ending = PlayerPrefs.GetInt("ending", 1);
-        Debug.Log(ending);
         SceneManager.LoadScene(scenes[ending-1]);
     }
 }

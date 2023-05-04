@@ -23,7 +23,5 @@ public class Night3SaveData : MonoBehaviour
         else ending = 1;
 
         PlayerPrefs.SetInt("ending", ending);
-
-        Debug.Log("ending saved");
     }
 }
