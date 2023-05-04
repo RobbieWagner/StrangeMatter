@@ -66,6 +66,7 @@ public class CutsceneManager : DialogueManager
 
     public IEnumerator PlayRecording()
     {
+        tapeRecorder.listenedToRecording = true;
         textImage.enabled = true;
         playingRecording = true;
         canPressRecord = false;

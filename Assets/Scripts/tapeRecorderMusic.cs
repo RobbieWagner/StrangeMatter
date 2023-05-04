@@ -10,10 +10,13 @@ public class TapeRecorderMusic : MonoBehaviour
 
     [HideInInspector] public bool recording;
 
+    [HideInInspector] public bool listenedToRecording;
+
     private void Start() 
     {
         isPaused = false;
         recording = false;
+        listenedToRecording = false;
     }
 
     public void OnButtonPress()
