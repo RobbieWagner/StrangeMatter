@@ -31,12 +31,12 @@ public class Ending1 : MonoBehaviour
                 yield return new WaitForSeconds(.2f);
             }
         }
-        yield return new WaitForSeconds(1f);
+        yield return new WaitForSeconds(1.5f);
 
         image.enabled = true;
         text.enabled = true;
 
-        yield return new WaitForSeconds(2f);
+        yield return new WaitForSeconds(2.5f);
 
         SceneManager.LoadScene("MainMenu");
     }

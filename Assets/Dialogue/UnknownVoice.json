@@ -42,7 +42,7 @@
         },
         {
             "textID": 8,
-            "text": "The people need to know about this. They need warning." ,
+            "text": "The people need to know about this. They need to be warned." ,
             "textColor": "blue"
         },
         {
@@ -53,6 +53,11 @@
         {
             "textID": 10,
             "text": "You'll risk getting caught, but the public deserves the truth." ,
+            "textColor": "blue"
+        },
+        {
+            "textID": 11,
+            "text": "Good luck." ,
             "textColor": "blue"
         }
     ]

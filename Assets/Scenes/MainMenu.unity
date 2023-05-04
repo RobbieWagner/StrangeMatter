@@ -358,6 +358,18 @@ PrefabInstance:
       propertyPath: m_Name
       value: Quit
       objectReference: {fileID: 0}
+    - target: {fileID: 3913408674384595614, guid: 62ad096389a25b14e9afe173ff992e8d, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 493884985}
+    - target: {fileID: 3913408674384595614, guid: 62ad096389a25b14e9afe173ff992e8d, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: OnSelectMenuItem
+      objectReference: {fileID: 0}
+    - target: {fileID: 3913408674384595614, guid: 62ad096389a25b14e9afe173ff992e8d, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: QuitGameMenuItem, Assembly-CSharp
+      objectReference: {fileID: 0}
     - target: {fileID: 3913408674384595615, guid: 62ad096389a25b14e9afe173ff992e8d, type: 3}
       propertyPath: m_Pivot.x
       value: 0.5
@@ -453,6 +465,17 @@ RectTransform:
   m_CorrespondingSourceObject: {fileID: 3913408674384595615, guid: 62ad096389a25b14e9afe173ff992e8d, type: 3}
   m_PrefabInstance: {fileID: 493884983}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &493884985 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 106841741909844699, guid: 62ad096389a25b14e9afe173ff992e8d, type: 3}
+  m_PrefabInstance: {fileID: 493884983}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d3df358396c48aa4eb4589c8f1ae95e3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &519420028
 GameObject:
   m_ObjectHideFlags: 0
@@ -543,14 +566,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 4747408830536509346, guid: 06424341fc3755e449bff85aa14b68cc, type: 3}
-      propertyPath: m_fontAsset
-      value: 
-      objectReference: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-    - target: {fileID: 4747408830536509346, guid: 06424341fc3755e449bff85aa14b68cc, type: 3}
-      propertyPath: m_sharedMaterial
-      value: 
-      objectReference: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
     - target: {fileID: 4883016585572747116, guid: 06424341fc3755e449bff85aa14b68cc, type: 3}
       propertyPath: settings
       value: 
