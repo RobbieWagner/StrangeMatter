@@ -1,0 +1,48 @@
+{
+    "sentences": [
+        {
+            "textID": 0,
+            "text": "Wait, what?"
+        },
+        {
+            "textID": 1,
+            "text": "An audio recording?"
+        },
+        {
+            "textID": 2,
+            "text": "There's an audio recording of it?"
+        },
+        {
+            "textID": 3,
+            "text": "..." 
+        },
+        {
+            "textID": 4,
+            "text": "Fine." 
+        },
+        {
+            "textID": 5,
+            "text": "Look's like you've got us." 
+        },
+        {
+            "textID": 6,
+            "text": "We don't want this recording getting out to the public." 
+        },
+        {
+            "textID": 7,
+            "text": "So..." 
+        },
+        {
+            "textID": 8,
+            "text": "In exchange for not releasing it." 
+        },
+        {
+            "textID": 9,
+            "text": "We'll give you a ticket out of here." 
+        },
+        {
+            "textID": 10,
+            "text": "What do you say?" 
+        }
+    ]
+}

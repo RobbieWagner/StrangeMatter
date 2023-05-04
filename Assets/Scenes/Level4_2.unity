@@ -368,7 +368,6 @@ GameObject:
   - component: {fileID: 30464697}
   - component: {fileID: 30464696}
   - component: {fileID: 30464695}
-  - component: {fileID: 30464702}
   m_Layer: 5
   m_Name: blob2
   m_TagString: Untagged
@@ -407,7 +406,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f5bfd39a1c157834e9058768b497483e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  goalEffect: {fileID: 30464702}
+  goalEffect: {fileID: 0}
   goalAchievementText: 'Distance(ly): 169'
 --- !u!95 &30464696
 Animator:
@@ -527,23 +526,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 30464693}
   m_CullTransparentMesh: 1
---- !u!114 &30464702
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 30464693}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 097d578fabf24d341994a5cb201ff5fb, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  newText: 'distance(ly): ERROR'
-  delayTime: 3.01
-  displayTime: 0.5
-  text: {fileID: 373254409}
-  newMatter: {fileID: 8288574113411999425, guid: 21287cd618a7a3a4eb0892eeec5695b3, type: 3}
 --- !u!1001 &37294986
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1287,7 +1269,6 @@ GameObject:
   - component: {fileID: 250245606}
   - component: {fileID: 250245605}
   - component: {fileID: 250245604}
-  - component: {fileID: 250245611}
   m_Layer: 5
   m_Name: blob3
   m_TagString: Untagged
@@ -1326,7 +1307,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f5bfd39a1c157834e9058768b497483e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  goalEffect: {fileID: 250245611}
+  goalEffect: {fileID: 0}
   goalAchievementText: 'Distance(ly): 3'
 --- !u!95 &250245605
 Animator:
@@ -1446,23 +1427,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 250245602}
   m_CullTransparentMesh: 1
---- !u!114 &250245611
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 250245602}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 097d578fabf24d341994a5cb201ff5fb, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  newText: 'distance(ly): ERROR'
-  delayTime: 3.01
-  displayTime: 0.5
-  text: {fileID: 373254409}
-  newMatter: {fileID: 8288574113411999425, guid: 21287cd618a7a3a4eb0892eeec5695b3, type: 3}
 --- !u!1001 &275762001
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -4066,7 +4030,6 @@ GameObject:
   - component: {fileID: 565693257}
   - component: {fileID: 565693256}
   - component: {fileID: 565693255}
-  - component: {fileID: 565693262}
   m_Layer: 5
   m_Name: blob (3)
   m_TagString: Untagged
@@ -4105,7 +4068,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f5bfd39a1c157834e9058768b497483e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  goalEffect: {fileID: 565693262}
+  goalEffect: {fileID: 0}
   goalAchievementText: 'Distance(ly): 65'
 --- !u!95 &565693256
 Animator:
@@ -4225,23 +4188,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 565693253}
   m_CullTransparentMesh: 1
---- !u!114 &565693262
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 565693253}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 097d578fabf24d341994a5cb201ff5fb, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  newText: 'distance(ly): ERROR'
-  delayTime: 3.01
-  displayTime: 0.5
-  text: {fileID: 373254409}
-  newMatter: {fileID: 8288574113411999425, guid: 21287cd618a7a3a4eb0892eeec5695b3, type: 3}
 --- !u!1 &584307978
 GameObject:
   m_ObjectHideFlags: 0
@@ -5165,7 +5111,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f5bfd39a1c157834e9058768b497483e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  goalEffect: {fileID: 671939414}
+  goalEffect: {fileID: 0}
   goalAchievementText: 'Distance(ly): 82'
 --- !u!114 &671939402
 MonoBehaviour:
@@ -5179,42 +5125,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f5bfd39a1c157834e9058768b497483e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  goalEffect: {fileID: 671939415}
+  goalEffect: {fileID: 0}
   goalAchievementText: distance(ly):211
---- !u!114 &671939414
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 671939395}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 097d578fabf24d341994a5cb201ff5fb, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  newText: 'distance(ly): ERROR'
-  delayTime: 3.01
-  displayTime: 0.5
-  text: {fileID: 373254409}
-  newMatter: {fileID: 8288574113411999425, guid: 21287cd618a7a3a4eb0892eeec5695b3, type: 3}
---- !u!114 &671939415
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 671939397}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 097d578fabf24d341994a5cb201ff5fb, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  newText: 'distance(ly): ERROR'
-  delayTime: 3.01
-  displayTime: 0.5
-  text: {fileID: 373254409}
-  newMatter: {fileID: 8288574113411999425, guid: 21287cd618a7a3a4eb0892eeec5695b3, type: 3}
 --- !u!1 &678643260
 GameObject:
   m_ObjectHideFlags: 0
@@ -5703,7 +5615,6 @@ GameObject:
   - component: {fileID: 769320739}
   - component: {fileID: 769320738}
   - component: {fileID: 769320737}
-  - component: {fileID: 769320744}
   m_Layer: 5
   m_Name: blob (1)
   m_TagString: Untagged
@@ -5742,7 +5653,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f5bfd39a1c157834e9058768b497483e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  goalEffect: {fileID: 769320744}
+  goalEffect: {fileID: 0}
   goalAchievementText: 'distance(ly): 78'
 --- !u!95 &769320738
 Animator:
@@ -5862,23 +5773,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 769320735}
   m_CullTransparentMesh: 1
---- !u!114 &769320744
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 769320735}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 097d578fabf24d341994a5cb201ff5fb, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  newText: 'distance(ly): ERROR'
-  delayTime: 3.01
-  displayTime: 0.5
-  text: {fileID: 373254409}
-  newMatter: {fileID: 8288574113411999425, guid: 21287cd618a7a3a4eb0892eeec5695b3, type: 3}
 --- !u!1 &773650661
 GameObject:
   m_ObjectHideFlags: 0
@@ -11907,7 +11801,6 @@ GameObject:
   - component: {fileID: 1706041926}
   - component: {fileID: 1706041925}
   - component: {fileID: 1706041924}
-  - component: {fileID: 1706041931}
   m_Layer: 5
   m_Name: blob (2)
   m_TagString: Untagged
@@ -11946,7 +11839,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f5bfd39a1c157834e9058768b497483e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  goalEffect: {fileID: 1706041931}
+  goalEffect: {fileID: 0}
   goalAchievementText: 'distance(ly): 209'
 --- !u!95 &1706041925
 Animator:
@@ -12066,23 +11959,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1706041922}
   m_CullTransparentMesh: 1
---- !u!114 &1706041931
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1706041922}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 097d578fabf24d341994a5cb201ff5fb, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  newText: 'distance(ly): ERROR'
-  delayTime: 3.01
-  displayTime: 0.5
-  text: {fileID: 373254409}
-  newMatter: {fileID: 8288574113411999425, guid: 21287cd618a7a3a4eb0892eeec5695b3, type: 3}
 --- !u!1 &1716604115
 GameObject:
   m_ObjectHideFlags: 0

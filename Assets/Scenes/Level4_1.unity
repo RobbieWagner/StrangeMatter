@@ -553,7 +553,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 3457699577418292820, guid: 50b7783f2a370c24eb47de1df970fc3b, type: 3}
       propertyPath: m_text
-      value: June 13th, 1972
+      value: June 20th, 1972
       objectReference: {fileID: 0}
     - target: {fileID: 3457699577418292820, guid: 50b7783f2a370c24eb47de1df970fc3b, type: 3}
       propertyPath: m_fontSizeBase
