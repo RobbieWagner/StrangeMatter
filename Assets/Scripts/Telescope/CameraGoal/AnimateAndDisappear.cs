@@ -12,6 +12,8 @@ public class AnimateAndDisappear : GoalEffect
     [SerializeField] TapeRecorderMusic tapeRecorder;
     [SerializeField] TextMeshProUGUI text;
 
+    [SerializeField] AudioSource sound;
+
     public override void ActivateGoalEffect()
     {
         if(timeToWait > 0) StartCoroutine(WaitToDestroy());
@@ -26,7 +28,8 @@ public class AnimateAndDisappear : GoalEffect
         yield return new WaitForSeconds(timeToWait);
 
         if(tapeRecorder.recording) saveData.recordedMonster = true;
-
+        sound.Play();
+        
         Destroy(gameObject);
     }
 }
